@@ -19,7 +19,7 @@ export default function Home() {
             </p>
             <h2>
               <CustomLink className='mt-8' href='/fade'>
-                Go to fade page
+                Start to the fade page
               </CustomLink>
             </h2>
             <footer className='absolute text-gray-500 bottom-2'>

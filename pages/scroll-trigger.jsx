@@ -21,9 +21,10 @@ export default function Stagger() {
               stagger={0.2}
               ease='power2.out'
             >
-              <h1>
-                <CustomLink href='/'>Back to Home</CustomLink>
-              </h1>
+              <div className='flex space-x-4'>
+                <CustomLink href='/reveal'>← Back</CustomLink>
+                <CustomLink href='/'>To The Home Page →</CustomLink>
+              </div>
               <p>
                 This section is not connected to scroll trigger, will run on
                 render
@@ -55,8 +56,13 @@ export default function Stagger() {
               <div className='w-5 h-5 bg-white'></div>
 
               <p className='text-primary-400'>
-                When top of the next section, meets center of viewport, Tween
-                will trigger
+                We can also achieve the previous Reveal Animate on Scroll with
+                ScrollTrigger. But with ScrollTrigger we can do{' '}
+                <strong>Animate with Scroll</strong>
+              </p>
+              <p className='text-primary-400'>
+                Animate On Scroll Example: When top of the next section, meets
+                center of viewport, Tween will trigger (this can be customized)
               </p>
             </Tween>
 

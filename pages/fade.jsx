@@ -18,9 +18,10 @@ export default function Fade() {
                 duration={0.5}
                 ease='power2.out'
               >
-                <h1>
-                  <CustomLink href='/stagger'>To Stagger Page</CustomLink>
-                </h1>
+                <div className='flex space-x-4'>
+                  <CustomLink href='/'>← Back</CustomLink>
+                  <CustomLink href='/stagger'>To The Stagger Page →</CustomLink>
+                </div>
                 <p>All elements will animate all at once</p>
               </Tween>
               <Tween
@@ -31,10 +32,21 @@ export default function Fade() {
               >
                 <div className='w-5 h-5 bg-white'></div>
               </Tween>
+              <Tween
+                from={{ x: '100px' }}
+                to={{ x: 0 }}
+                duration={1}
+                ease='elastic.out'
+              >
+                <div className='w-5 h-5 bg-white'></div>
+              </Tween>
             </div>
 
-            <footer className='absolute text-gray-300 bottom-2'>
-              © {new Date().getFullYear()}
+            <footer className='absolute text-gray-500 bottom-2'>
+              © {new Date().getFullYear()} By{' '}
+              <CustomLink href='https://theodorusclarence.com'>
+                Theodorus Clarence
+              </CustomLink>
             </footer>
           </div>
         </section>
