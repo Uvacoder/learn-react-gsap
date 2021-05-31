@@ -9,25 +9,24 @@ export default function Home() {
       <main>
         <section className='bg-dark'>
           <div className='flex flex-col items-center justify-center min-h-screen text-white layout'>
-            <h1>
-              <CustomLink href='https://github.com/theodorusclarence/nextjs-tailwind-starter'>
-                NextJS Tailwind Starter
+            <h1>Learning React GSAP</h1>
+            <p className='mt-2 text-gray-400'>
+              Check out{' '}
+              <CustomLink href='https://github.com/theodorusclarence/learn-react-gsap'>
+                my repository
+              </CustomLink>{' '}
+              for the code
+            </p>
+            <h2>
+              <CustomLink className='mt-8' href='/fade'>
+                Go to fade page
               </CustomLink>
-            </h1>
-            <p className='mb-4'>
-              By{' '}
+            </h2>
+            <footer className='absolute text-gray-500 bottom-2'>
+              © {new Date().getFullYear()} By{' '}
               <CustomLink href='https://theodorusclarence.com'>
                 Theodorus Clarence
               </CustomLink>
-            </p>
-            <CustomLink href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fnextjs-tailwind-starter'>
-              <img src='https://vercel.com/button' alt='Deploy with Vercel' />
-            </CustomLink>
-            <div className='mt-8 text-dark'>
-              <p className='text-[#ffe347]'>JIT is on</p>
-            </div>
-            <footer className='absolute text-gray-300 bottom-2'>
-              © {new Date().getFullYear()}
             </footer>
           </div>
         </section>

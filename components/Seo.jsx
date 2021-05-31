@@ -4,8 +4,8 @@ import { useRouter } from 'next/router';
 export default function Seo(props) {
   const router = useRouter();
   const meta = {
-    title: 'Next.js Tailwind Starter',
-    description: 'A template for Next.js and Tailwindcss by Theodorus Clarence',
+    title: 'Learn React GSAP',
+    description: 'Learning React Animation with GSAP',
     image: 'https://theodorusclarence.com/favicon/large-og.jpg',
     type: 'website',
     robots: 'follow, index',
@@ -19,11 +19,11 @@ export default function Seo(props) {
       <meta content={meta.description} name='description' />
       <meta
         property='og:url'
-        content={`https://theodorusclarence.com${router.asPath}`}
+        content={`https://learn-react-gsap.vercel.app${router.asPath}`}
       />
       <link
         rel='canonical'
-        href={`https://theodorusclarence.com${router.asPath}`}
+        href={`https://learn-react-gsap.vercel.app${router.asPath}`}
       />
       {/* Open Graph */}
       <meta property='og:type' content={meta.type} />
